@@ -5,192 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What Will I Not Do in 2026</title>
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <style>
-    /* ================= VARIABLES ================= */
-    :root {
-      --bg: #fdfdfc;
-      --card-bg: #ffffff;
-      --text: #1c1c1c;
-      --muted: #6b6b6b;
-      --border: #e5e5e5;
-    }
-
-    [data-theme="dark"] {
-      --bg: #0f0f10;
-      --card-bg: #161618;
-      --text: #f1f1f1;
-      --muted: #a1a1a1;
-      --border: #2a2a2a;
-    }
-
-    /* ================= RESET ================= */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-    <script src="script.js"></script>
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      transition: background 0.4s ease, color 0.4s ease;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-      border-radius: 14px;
-    }
-
-    /* ================= LAYOUT ================= */
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 24px;
-    }
-
-    /* ================= THEME TOGGLE ================= */
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 10px 14px;
-      border-radius: 999px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: all 0.3s ease;
-      z-index: 100;
-    }
-
-    .theme-toggle:hover {
-      transform: translateY(-2px);
-    }
-
-    /* ================= HERO ================= */
-    .hero {
-      min-height: 90vh;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.6rem, 5vw, 4rem);
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 520px;
-    }
-
-    /* ================= SECTION TITLE ================= */
-    .section-title {
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 48px;
-      letter-spacing: -0.01em;
-    }
-
-    /* ================= CARD GRID ================= */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px;
-      opacity: 0;
-      transform: translateY(24px);
-      transition: all 0.8s ease;
-    }
-
-    .card.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-    }
-
-    .card span {
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .card h3 {
-      margin: 12px 0;
-      font-size: 1.05rem;
-      font-weight: 600;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    /* ================= ACCOUNTABILITY ================= */
-    .accountability {
-      margin-top: 100px;
-      padding: 48px;
-      text-align: center;
-      border-radius: 22px;
-      background: var(--card-bg);
-      border: 1px dashed var(--border);
-    }
-
-    .accountability h2 {
-      font-size: 1.6rem;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
-
-    .accountability p {
-      font-size: 1.1rem;
-      color: var(--muted);
-    }
-
-    /* ================= FOOTER ================= */
-    footer {
-      margin-top: 120px;
-      padding: 40px 24px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-
-    /* ================= RESPONSIVE ================= */
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -216,17 +35,84 @@
     <h2 class="section-title">My Commitments</h2>
 
     <div class="grid">
-      <div class="card"><span>01</span><h3>I will never go to bed feeling sad</h3><p>Sleep is closure. I choose peace over replaying the day’s weight.</p></div>
-      <div class="card"><span>02</span><h3>I will not say yes to everything</h3><p>Selective yeses protect my energy.</p></div>
-      <div class="card"><span>03</span><h3>I will never ignore my parents’ calls</h3><p>Presence is a form of gratitude.</p></div>
-      <div class="card"><span>04</span><h3>I will never apologize unnecessarily</h3><p>Confidence doesn’t need permission.</p></div>
-      <div class="card"><span>05</span><h3>I will not confuse work with life</h3><p>Boundaries keep both healthy.</p></div>
-      <div class="card"><span>06</span><h3>I will never drag unnecessary nonsense</h3><p>Clarity over chaos.</p></div>
-      <div class="card"><span>07</span><h3>I will never act out of peer pressure</h3><p>Alignment matters more than approval.</p></div>
-      <div class="card"><span>08</span><h3>I will never open my laptop on vacation</h3><p>Rest is intentional.</p></div>
-      <div class="card"><span>09</span><h3>I will never over-explain myself</h3><p>Those who understand don’t need it.</p></div>
-      <div class="card"><span>10</span><h3>I will never follow trends just to fade</h3><p>Timeless values last longer.</p></div>
-      <div class="card"><span>11</span><h3>I will never hesitate to book a vacation</h3><p>Memories are investments.</p></div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800" alt="">
+        <span>01</span>
+        <h3>I will never go to bed feeling sad</h3>
+        <p>Sleep is closure. I choose peace over replaying the day’s weight.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=800" alt="">
+        <span>02</span>
+        <h3>I will not say yes to everything</h3>
+        <p>Not every request deserves my agreement. Selective yeses protect my energy.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800" alt="">
+        <span>03</span>
+        <h3>I will never ignore my parents’ calls</h3>
+        <p>Some calls matter more than convenience. Presence is gratitude.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800" alt="">
+        <span>04</span>
+        <h3>I will never apologize unnecessarily</h3>
+        <p>Confidence doesn’t need permission. Respect starts with self-respect.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=800" alt="">
+        <span>05</span>
+        <h3>I will not confuse work with life</h3>
+        <p>Work supports my life — it does not replace it.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=800" alt="">
+        <span>06</span>
+        <h3>I will never drag unnecessary nonsense</h3>
+        <p>Clarity over chaos. I walk away from wasted energy.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=800" alt="">
+        <span>07</span>
+        <h3>I will never act out of peer pressure</h3>
+        <p>My choices are mine alone. Alignment matters more than approval.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800" alt="">
+        <span>08</span>
+        <h3>I will never open my laptop on vacation</h3>
+        <p>Rest is intentional. If I’m away, I’m truly away.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?q=80&w=800" alt="">
+        <span>09</span>
+        <h3>I will never over-explain myself</h3>
+        <p>Those who understand don’t need explanations.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=800" alt="">
+        <span>10</span>
+        <h3>I will never follow trends just to fade</h3>
+        <p>Timeless values outlast temporary attention.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800" alt="">
+        <span>11</span>
+        <h3>I will never hesitate to book a vacation</h3>
+        <p>Memories are investments. Life isn’t meant to be postponed.</p>
+      </div>
+
     </div>
 
     <!-- ACCOUNTABILITY -->
@@ -241,39 +127,8 @@
     © 2026 · What Will I Not Do · Author Name
   </footer>
 
-  <!-- ================= SCRIPTS ================= -->
-  <script>
-    /* Dark Mode */
-    const toggle = document.querySelector('.theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme) {
-      document.documentElement.setAttribute('data-theme', storedTheme);
-    } else if (prefersDark) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-
-    toggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
-
-    /* Scroll Reveal */
-    const cards = document.querySelectorAll('.card');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    cards.forEach(card => observer.observe(card));
-  </script>
+  <!-- Script -->
+  <script src="script.js"></script>
 
 </body>
 </html>
